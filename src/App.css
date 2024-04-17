@@ -1,11 +1,24 @@
 .App {
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   padding: 20px 10px;
+}
+
+.Wrapper {
+  margin-top: 20px;
 }
 
 .Button {
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.Title {
+  text-transform: capitalize;
+}
+
+.Counter {
+  font-size: 20px;
+  font-weight: 500;
 }
