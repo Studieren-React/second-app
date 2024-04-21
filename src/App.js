@@ -1,6 +1,7 @@
 import "./App.css";
 
 import { Component } from "react";
+import { Posts } from './components/Posts';
 
 export default class App extends Component {
   state = {
@@ -14,9 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.posts.map(post => (
-          <p key={post.id}>{post.name}</p>
-        ))}
+        <Posts posts={this.state.posts} />
       </div>
     );
   }
