@@ -12,10 +12,19 @@ export default class App extends Component {
     ]
   };
 
+  callConsole = () => {
+    console.log('call method on app.js');
+  }
+
   render() {
+    const { posts } = this.state;
+
     return (
       <div className="App">
-        <Posts posts={this.state.posts} />
+        <Posts
+          posts={posts}
+          cb={this.callConsole}
+        />
       </div>
     );
   }

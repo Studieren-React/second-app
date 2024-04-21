@@ -1,5 +1,5 @@
-export function Post({ name }) {
+export function Post({ name, cb }) {
     return (
-        <h2>{name}</h2>
+        <h2 onClick={cb}>{name}</h2>
     )
 }
