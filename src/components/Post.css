@@ -1,0 +1,13 @@
+.Post {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.PostTitle {
+    margin-right: 20px;
+}
+
+.PostButton {
+    cursor: pointer;
+}

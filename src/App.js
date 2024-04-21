@@ -12,8 +12,8 @@ export default class App extends Component {
     ]
   };
 
-  callConsole = () => {
-    console.log('call method on app.js');
+  deletePost = (id) => {
+    this.setState({ posts: this.state.posts.filter(post => post.id !== id) })
   }
 
   render() {
@@ -23,7 +23,7 @@ export default class App extends Component {
       <div className="App">
         <Posts
           posts={posts}
-          cb={this.callConsole}
+          deletePost={this.deletePost}
         />
       </div>
     );
